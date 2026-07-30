@@ -1,0 +1,131 @@
+version: 1.0
+
+medications:
+
+  sertraline:
+
+    display_name: "Sertraline"
+
+    schedules:
+
+      - time: morning
+
+  atenolol:
+
+    display_name: "Atenolol"
+
+    schedules:
+
+      - time: morning
+
+  amlodipine:
+
+    display_name: "Amlodipine"
+
+    schedules:
+
+      - time: morning
+
+  losartan_hydrochlorothiazide:
+
+    display_name: "Losartan-Hydrochlorothiazide"
+
+    schedules:
+
+      - time: morning
+
+  allopurinol:
+
+    display_name: "Allopurinol"
+
+    schedules:
+
+      - time: morning
+
+  oxybutynin:
+
+    display_name: "Oxybutynin"
+
+    schedules:
+
+      - time: morning
+
+  divalproex:
+
+    display_name: "Divalproex"
+
+    schedules:
+
+      - time: morning
+
+        tablets: 1
+
+        tablet_strength: "250 mg"
+
+        administration_prompt: "One 250 milligram tablet."
+
+      - time: evening
+
+        tablets: 2
+
+        tablet_strength: "250 mg"
+
+        administration_prompt: "Two 250 milligram tablets, totaling 500 milligrams."
+
+  low_dose_aspirin:
+
+    display_name: "Low-dose aspirin"
+
+    schedules:
+
+      - time: morning
+
+discontinued_medications:
+
+  - Glimepiride
+
+routines:
+
+  morning:
+
+    recitation:
+
+      - sertraline
+
+      - atenolol
+
+      - amlodipine
+
+      - losartan_hydrochlorothiazide
+
+      - allopurinol
+
+      - oxybutynin
+
+      - divalproex
+
+      - low_dose_aspirin
+
+    administration:
+
+      - sertraline
+
+      - atenolol
+
+      - amlodipine
+
+      - losartan_hydrochlorothiazide
+
+      - allopurinol
+
+      - oxybutynin
+
+      - divalproex
+
+      - low_dose_aspirin
+
+  evening:
+
+    administration:
+
+      - divalproex
